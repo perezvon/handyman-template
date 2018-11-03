@@ -4,13 +4,19 @@ title = "Contact"
 url = "/contact"
 +++
 
-## Please fill out the form below
+## Contact Us
 
-Let us know when you'd like to book a reservation and we'll contact you within 30 min to confirm or find another time.
+We can't wait to hear from you! 
 
-<form name="reservation">
+<form name="contact-form">
   <input type="text" placeholder="Your Name" name="name">
   <input type="email" placeholder="Your Email" name="email">
-  <textarea name="message" placeholder="When would you like to book a reservation?"></textarea>
+  <select name="email">
+    <option default>What type of service are you looking for?</option>
+    <option>Handyman</option>
+    <option>Cleaning</option>
+    <option>Moving</option>
+  </select>
+  <textarea name="message" placeholder="Tell us a little more about the job here."></textarea>
   <button>Send</button>
 </form>

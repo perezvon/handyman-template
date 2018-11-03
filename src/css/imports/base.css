@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Rock+Salt);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Roboto:900);
 
 * {
   box-sizing: border-box;
@@ -678,14 +678,6 @@ html {
 }
 
 .sidebar-about {
-  h1 {
-    color: #fff;
-    margin: 0 0 .35em 0;
-    font-family: "Rock Salt", cursive;
-    font-size: 3.25rem;
-    transition: color .2s ease;
-    -webkit-font-smoothing: antialiased;
-  }
   .lead {
     font-size: .8em;
   }
@@ -763,7 +755,7 @@ a.sidebar-nav-item {
   }
 }
 
-video {
+.landing {
   object-fit: cover;
   width: 100vw;
   height: 100vh;
@@ -771,4 +763,35 @@ video {
   top: 0;
   left: 0;
   z-index: -1;
+  background: no-repeat center center url('/img/gallery/kitchen_after.jpg');
+  background-size: cover;
+  h1 {
+    color: #fff;
+    text-shadow: 7px 2px 2px #1C6EA4;
+    letter-spacing: -2px;
+    line-height: 1;
+    margin: 0 0 .35em 0;
+    font-family: "Roboto";
+    font-size: 5.25rem;
+    transition: color .2s ease;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.splitting .char {
+  animation: heavy-fall 1s cubic-bezier(1,.53,0,1.38) both;
+  animation-delay: calc(20ms * (20 * var(--char-index)));
+}
+
+@keyframes heavy-fall {
+  from {
+    transform: scale(10) scale(0.5);
+    opacity: 0;
+  }
+  70% {
+    transform: rotate3d(10, 10, 10, 20deg)
+  }
+  90% {
+    transform: rotate3d(-10, -10, -10, 20deg)
+  }
 }

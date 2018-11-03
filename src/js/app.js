@@ -1,4 +1,7 @@
 // JS Goes here - ES6 supported
+
+Splitting();
+
 const mySiema = new Siema({
   selector: '.gallery-carousel',
   duration: 200,
