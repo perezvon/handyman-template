@@ -21,6 +21,6 @@ title = "JJ Handyman Services"
     weight = 1
     
 [[menu.main]]
-    name = "Contact"
+    name = "Schedule Appointment"
     url  = "/contact"
     weight = 1

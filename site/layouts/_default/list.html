@@ -50,14 +50,17 @@
       </section>
     {{ end }}
   {{ else if eq .Section "gallery" }}
-    <div class="gallery-carousel">
+    <div class="gallery-container">
       {{ range where .Pages "Section" "gallery" }}
-        <div><img src="{{ .Params.image }}"/></div>
+        <div>
+          <img class="gallery-image" src="{{ .Params.before_image }}"/>
+          <p>{{ .Params.before_caption }}</p>
+        </div>
+        <div>
+          <img class="gallery-image" src="{{ .Params.after_image }}"/>
+          <p>{{ .Params.after_caption }}</p>
+        </div>
       {{ end }}
-    </div>
-    <div class="buttons">
-      <button class="prev half-button">Prev</button>
-      <button class="next half-button">Next</button>
     </div>
   {{ end }}
 </div>

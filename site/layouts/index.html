@@ -2,6 +2,7 @@
 
 <div class="content container landing">
   <h1 data-splitting>{{ .Site.Title }}</h1>
+  <p class="lead">{{ .Site.Params.description | markdownify }}</p>
 </div>
 
 {{ partial "footer" . }}
