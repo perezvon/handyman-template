@@ -652,11 +652,23 @@ html {
   font-size: 14px;
   position: fixed;
   top: 0;
-  width: 100%;
-  height: 80px;
+  right: -1000px;
+  width: 100vw;
+  height: 100vh;
+  transition: all 0.3s;
   padding: 24px 14px;
   color: rgba(255, 255, 255, 0.5);
   background-color: rgba(0,0,0,0.7);
+  .mobile-nav-menu {
+    width: 40px;
+    height: 40px;
+    color: white;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding-top: 10px;
+    text-align: center;
+  }
   a {
     color: #fff;
     transition: color .2s ease;
@@ -664,6 +676,14 @@ html {
       color: #ff7660;
       text-decoration: none;
     }
+  }
+}
+
+@media (min-width: 48em) {
+  .navigation {
+    width: 100%;
+    height: 80px;
+    left: 0;
   }
 }
 
@@ -676,23 +696,35 @@ html {
 }
 
 .navigation-nav {
+  display: flex;
+  flex-flow: column;
   list-style: none;
-  margin: 0;
+  margin: 20px;
   padding: 0;
   overflow: hidden;
-  position: fixed;
-  right: 0;
-  top: 24px;
+  
+  
+  @media (min-width: 48em) {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 24px;
+    margin: 0;
+  }
 }
 
 .navigation-nav-item {
-  float: right;
   border: 1px solid white;
-  margin: 0 10px;
-  padding: 4px 0;
+  margin: 20px;
+  padding: 8px;
   transition: background 0.3s;
   &:hover, &:focus {
     background: white;
+  }
+  @media (min-width: 48em) {
+    float: right;
+    margin: 0 10px;
+    padding: 4px 0;
   }
 }
 
@@ -763,14 +795,20 @@ html {
 }
 
 .free-consult {
-  z-index: 50;
+  width: 100vw;
   position: fixed;
-  font-size: 22px;
   top: 80px;
-  right: 20px;
+  left: 0;
+  z-index: 50;
+  font-size: 22px;
   background: rgba(0,0,0,0.6);
-  padding: 5px;
+  padding: 25px 10px;
   color: white;
+  @media (min-width: 48em) {
+    width: fit-content;
+    left: calc(100% - 320px);
+    padding: 5px;
+  }
 }
 
 @media (min-width: 48em) {

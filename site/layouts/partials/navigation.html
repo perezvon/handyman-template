@@ -1,5 +1,6 @@
 <div class="navigation">
   <a href="{{ .Site.BaseURL }}"><span class='site-title'>{{ .Site.Title }}</span></a>
+  <div class='mobile-nav-menu'>MENU</div>
   <ul class="navigation-nav">
     {{ range .Site.Menus.main }}
       <li class='navigation-nav-item'><a href="{{.URL}}"> {{ .Name }} </a></li>
