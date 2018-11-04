@@ -164,7 +164,6 @@ img {
 
   @media (max-width: 30em) {
     min-height: 200px;
-    max-height: 200px;
   }
 }
 
@@ -649,6 +648,7 @@ html {
 }
 
 .navigation {
+  z-index: 51;
   font-size: 14px;
   position: fixed;
   top: 0;
@@ -747,6 +747,7 @@ html {
   z-index: -1;
   padding-top: 12em;
   background: no-repeat center center url('/img/landing-img.jpg');
+  background-color: #5B3D23;
   background-size: cover;
   h1 {
     color: #fff;
@@ -755,15 +756,26 @@ html {
     line-height: 1;
     margin: 0 0 .35em 0;
     font-family: "Roboto";
-    font-size: 3.25rem;
+    font-size: 3.25rem !important;
     transition: color .2s ease;
     -webkit-font-smoothing: antialiased;
   }
 }
 
+.free-consult {
+  z-index: 50;
+  position: fixed;
+  font-size: 22px;
+  top: 80px;
+  right: 20px;
+  background: rgba(0,0,0,0.6);
+  padding: 5px;
+  color: white;
+}
+
 @media (min-width: 48em) {
   .landing h1 {
-    font-size: 5.5rem;
+    font-size: 5.5rem !important;
   }
 }
 
@@ -773,8 +785,11 @@ html {
 }
 
 .gallery-image {
+  margin: 20px 0;
   width: 300px;
-  margin: 20px;
+  @media (min-width: 48em) {
+      margin: 20px;
+  }
 }
 
 .splitting .char {

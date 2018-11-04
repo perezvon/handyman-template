@@ -11,7 +11,7 @@ url = "/contact"
 
 Book an appointment with us to learn more.
 
-<form name="contact-form">
+<form name="contact-form" netlify>
   <input type="text" placeholder="Your Name" name="name">
   <input type="email" placeholder="Your Email" name="email">
   <select name="email">

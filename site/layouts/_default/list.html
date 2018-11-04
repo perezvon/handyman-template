@@ -1,5 +1,5 @@
 {{ partial "header" . }}
-
+<p class='free-consult'>✨✨ Free Consultations! ✨✨</p>
 <div class="content container {{ .Title }} {{ .Section | urlize }}">
   <h1>{{ .Section }}</h1>
   {{ if eq .Section "services" }}
@@ -7,39 +7,38 @@
       <section>
         {{ if eq "categories" $taxonomyname }}
           {{ range $key, $value := $taxonomy }}
-            {{ if ne $key "drinks"}}
-              <h2><em>{{ $key }}</em></h2>
-              <hr>
-              {{ range $value.Pages.GroupByParam "type" }}
-                <h3>{{ .Key }}</h3>
-                <ul>
-                {{ range .Pages }}
-                  <li>
-                    <p><strong>{{ .Title }}:</strong> {{ .Params.description }}</p>
-                    <p>{{ .Params.price }}</p>
-                  </li>
-                {{ end }}
-                </ul>
+            <h2>{{ $key }}</h2>
+            <hr>
+            {{ range $value.Pages.GroupByParam "type" }}
+              <h3>{{ .Key }}</h3>
+              <ul>
+              {{ range .Pages }}
+                <li>
+                  <p><strong>{{ .Title }}:</strong> {{ .Params.description }}</p>
+                  <p>{{ .Params.price }}</p>
+                </li>
               {{ end }}
+              </ul>
             {{ end }}
+            <a href='/contact'><button>Schedule Now</button></a>
           {{ end }}
         {{ end }}
       </section>
     {{ end }}
-  {{ else if eq .Section "drinks" }}
+  {{ else if eq .Section "testimonials" }}
     {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
       <section>
         {{ if eq "categories" $taxonomyname }}
           {{ range $key, $value := $taxonomy }}
-            {{ if eq $key "drinks"}}
-              {{ range $value.Pages.GroupByParam "type" }}
-                <h2><em>{{ .Key }}</em></h3>
+            {{ if eq $key "testimonials"}}
+              {{ range $value.Pages.GroupByParam "stars" }}
+                <h2>{{ .Key }}</h2>
                 <hr>
                 <ul>
                 {{ range .Pages }}
                   <li>
-                    <p><strong>{{ .Title }}:</strong> {{ .Params.description }}</p>
-                    <p>{{ .Params.price }}</p>
+                    <p>{{ .Params.author }}</p>
+                    <p>{{ .Params.body }}</p>
                   </li>
                 {{ end }}
                 </ul>

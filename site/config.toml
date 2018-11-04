@@ -3,22 +3,22 @@ languageCode = "en-us"
 title = "JJ Handyman Services"
 
 [params]
-  description = "Handyman services, moving, cleaning in the greater Twin Cities metro area."
+  description = "Handyman services, moving, and professional cleaning in the greater Twin Cities metro area."
 
 [[menu.main]]
     name = "Services"
     url  = "/services"
-    weight = 1
+    weight = 4
 
 [[menu.main]]
     name = "Gallery"
     url  = "/gallery"
-    weight = 1
+    weight = 3
     
 [[menu.main]]
     name = "Testimonials"
     url  = "/testimonials"
-    weight = 1
+    weight = 2
     
 [[menu.main]]
     name = "Schedule Appointment"
