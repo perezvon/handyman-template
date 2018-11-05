@@ -26,28 +26,13 @@
       </section>
     {{ end }}
   {{ else if eq .Section "testimonials" }}
-    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-      <section>
-        {{ if eq "categories" $taxonomyname }}
-          {{ range $key, $value := $taxonomy }}
-            {{ if eq $key "testimonials"}}
-              {{ range $value.Pages.GroupByParam "stars" }}
-                <h2>{{ .Key }}</h2>
-                <hr>
-                <ul>
-                {{ range .Pages }}
-                  <li>
-                    <p>{{ .Params.author }}</p>
-                    <p>{{ .Params.body }}</p>
-                  </li>
-                {{ end }}
-                </ul>
-              {{ end }}
-            {{ end }}
-          {{ end }}
-        {{ end }}
-      </section>
-    {{ end }}
+    <div class='testimonials-container'>
+      {{ range where .Pages "Section" "testimonials" }}
+        <p>⭐⭐⭐⭐⭐ "{{ .Params.body }}"</p>
+        <h3>—{{ .Params.author }}</h3>
+        <br />
+      {{ end }}
+    </div>
   {{ else if eq .Section "gallery" }}
     <div class="gallery-container">
       {{ range where .Pages "Section" "gallery" }}

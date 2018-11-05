@@ -7,4 +7,5 @@ description: >-
   We pack and haul your belongings with as much care as if they were our own. We'll deliver them to your new home with zero hassle.
 type: ''
 price: ''
+weight: 1
 ---

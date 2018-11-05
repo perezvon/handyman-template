@@ -660,14 +660,15 @@ html {
   color: rgba(255, 255, 255, 0.5);
   background-color: rgba(0,0,0,0.7);
   .mobile-nav-menu {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     color: white;
     position: fixed;
     top: 20px;
     right: 20px;
-    padding-top: 10px;
+    padding-top: 14px;
     text-align: center;
+    background: rgba(0,0,0,0.6);
   }
   a {
     color: #fff;
