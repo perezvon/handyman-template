@@ -4,17 +4,17 @@ backend:
 media_folder: "img/uploads" # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "testimonial" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Testimonial" # Used in the UI, ie.: "New Post"
-    folder: "_testimonials" # The path to the folder where the documents are stored
+  - name: "testimonials" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Testimonials" # Used in the UI, ie.: "New Post"
+    folder: "testimonials" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Author", name: "author", widget: "string", tagname: "h1"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Stars", name: "stars", widget: "stars"}
-  - name: "service" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Service" # Used in the UI, ie.: "New Post"
-    folder: "_services" # The path to the folder where the documents are stored
+  - name: "services" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Services" # Used in the UI, ie.: "New Post"
+    folder: "services" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Categories", name: "categories", widget: "string"}
