@@ -4,7 +4,9 @@ categories:
 date: 2018-10-03T17:03:58.000Z
 title: Whole Home Cleaning
 description: >-
-  Clean your whole home large or small for a one-time fee.
+We use green products which are completely natural and environmentally safe. We offer one time servicing or recurring to fit consumer needs. Will send a cleaning pro to sit down and go over all clients needs and locate problem areas to ensure full understanding of scope of work. Here at JJ Handyman we dedicate our time and work to customer satisfaction. 
+
+BOOK NOW FOR YOUR FREE CONSULTATION!!
 type: ''
 price: ''
 weight: 1
