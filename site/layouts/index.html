@@ -3,6 +3,9 @@
 <div class="content container landing">
   <h1 data-splitting>{{ .Site.Title }}</h1>
   <p class="lead">{{ .Site.Params.description | markdownify }}</p>
+  <div class='intro-text'>
+    <p style='color: white'>{{ .Site.Params.about | markdownify }}</p>
+  </div>
   <p class='free-consult'>✨✨ Free Consultations! ✨✨</p>
 </div>
 
