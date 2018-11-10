@@ -8,19 +8,23 @@ title = "JJ Handyman Services"
 [[menu.main]]
     name = "Services"
     url  = "/services"
+    pre  = "<i class='fas fa-tape'></i>"
     weight = 4
 
 [[menu.main]]
     name = "Gallery"
     url  = "/gallery"
+    pre  = "<i class='fas fa-camera-retro'></i>"
     weight = 3
     
 [[menu.main]]
     name = "Testimonials"
     url  = "/testimonials"
+    pre  = "<i class='fas fa-comments'></i>"
     weight = 2
     
 [[menu.main]]
-    name = "Schedule Appointment"
+    name = "Book Now"
     url  = "/contact"
+    pre  = "<i class='fas fa-calendar-alt'></i>"
     weight = 1

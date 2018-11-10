@@ -2,9 +2,12 @@
 
 <div class="content container landing">
   <h1 data-splitting>{{ .Site.Title }}</h1>
-  <p class="lead">{{ .Site.Params.description | markdownify }}</p>
-  <div class='intro-text'>
-    <p style='color: white'>{{ .Site.Params.about | markdownify }}</p>
+  <!-- <p class="lead">{{ .Site.Params.description | markdownify }}</p> -->
+  <div class='landing-image'>
+    <div class='intro-text'>
+      <p>{{ .Site.Params.about | markdownify }}</p>
+      <a href='/contact'><button class='book-now-button landing-cta'>book now for your free consultation!</button></a>
+    </div>
   </div>
   <p class='free-consult'>✨✨ Free Consultations! ✨✨</p>
 </div>

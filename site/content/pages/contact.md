@@ -11,10 +11,13 @@ url = "/contact"
 
 Book an appointment with us to learn more.
 
-<form name="contact-form" netlify>
+<form name="contact-form" method="POST" netlify-honeypot="bot-field" netlify>
+  <p class="hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
   <input type="text" placeholder="Your Name" name="name">
   <input type="email" placeholder="Your Email" name="email">
-  <select name="email">
+  <select name="service-type">
     <option default>Type of service</option>
     <option value='handyman'>Handyman</option>
     <option value='cleaning'>Cleaning</option>

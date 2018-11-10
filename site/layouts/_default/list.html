@@ -20,7 +20,7 @@
               {{ end }}
               </ul>
             {{ end }}
-            <a href='/contact'><button>Schedule Now</button></a>
+            <a href='/contact'><button class='book-now-button'>book now for your free consultation!</button></a>
           {{ end }}
         {{ end }}
       </section>
@@ -28,19 +28,24 @@
   {{ else if eq .Section "testimonials" }}
     <div class='testimonials-container'>
       {{ range where .Pages "Section" "testimonials" }}
-        <p>⭐⭐⭐⭐⭐ "{{ .Params.body }}"</p>
-        <h3>—{{ .Params.author }}</h3>
-        <br />
+        <div class='testimonial'>
+          <p class='stars'>⭐⭐⭐⭐⭐</p> 
+          <p>"{{ .Params.body }}"</p>
+          <h3>—{{ .Params.author }}</h3>
+          <br />
+        </div>
       {{ end }}
+      <a href='/contact'><button class='testimonial-cta'>book now for your free consultation!</button></a>
     </div>
   {{ else if eq .Section "gallery" }}
+    <div class='bg-overlay'></div>
     <div class="gallery-container">
       {{ range where .Pages "Section" "gallery" }}
-        <div>
+        <div class='gallery-image-container'>
           <img class="gallery-image" src="{{ .Params.before_image }}"/>
           <p>{{ .Params.before_caption }}</p>
         </div>
-        <div>
+        <div class='gallery-image-container'>
           <img class="gallery-image" src="{{ .Params.after_image }}"/>
           <p>{{ .Params.after_caption }}</p>
         </div>
