@@ -7,4 +7,5 @@ description: >-
   Need something a little more regular? Schedule a recurring service with us. Monthly, weekly, biweekly, you name it. 
 type: ''
 price: ''
+icon: 'fas fa-calendar'
 ---

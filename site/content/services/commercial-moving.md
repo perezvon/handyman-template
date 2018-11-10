@@ -7,4 +7,5 @@ description: >-
   Upgrading the office digs? We can help with that. Large or small, we can handle the details while you focus on the big picture for your business.
 type: ''
 price: ''
+icon: 'fas fa-truck-loading'
 ---

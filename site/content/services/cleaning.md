@@ -7,6 +7,7 @@ description: >-
   We use green products which are completely natural and environmentally safe. We offer one time servicing or recurring to fit consumer needs. Will send a cleaning pro to sit down and go over all clients needs and locate problem areas to ensure full understanding of scope of work. Here at JJ Handyman we dedicate our time and work to customer satisfaction. 
 type: ''
 price: ''
+icon: 'fas fa-broom'
 weight: 1
 ---
 

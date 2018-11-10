@@ -943,6 +943,11 @@ html {
     right: 30px;
   }
 }
+@media (min-width: 48em) {
+  .service-icon {
+    font-size: 32px;
+  }
+}
 
 .book-now-button {
   font-variant: small-caps;

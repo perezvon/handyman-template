@@ -14,7 +14,7 @@
               <ul>
               {{ range .Pages }}
                 <li>
-                  <p><strong>{{ .Title }}:</strong> {{ .Params.description }}</p>
+                  <p><strong><i class='service-icon {{ .Params.icon }}'></i> {{ .Title }}:</strong> {{ .Params.description }}</p>
                   <p>{{ .Params.price }}</p>
                 </li>
               {{ end }}
