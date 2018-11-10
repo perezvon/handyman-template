@@ -738,6 +738,7 @@ html {
   background: white;
   padding: 10px;
   
+  animation: slide-in 1s ease-out;
   @media (min-width: 48em) {
     width: 50%;
     position: relative;
@@ -799,6 +800,10 @@ html {
   small {
     text-align: center;
   }
+}
+
+.content.container.landing {
+  padding-bottom: 0 !important;
 }
 
 @media (min-width: 48em) {
@@ -999,6 +1004,17 @@ html {
   }
   .social-nav {
     font-size: 48px;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    left: 80%; 
+  }
+  to {
+    opacity: 1;
+    left: 40%;
   }
 }
 
