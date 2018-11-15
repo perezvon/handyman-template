@@ -1,6 +1,7 @@
 ---
 categories:
-  - Handyman
+  - 1.Handyman/Remodeling
+categories_weight: 1
 date: 2018-11-03T17:03:58.000Z
 title: Handyman/Remodel
 description: >-

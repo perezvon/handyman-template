@@ -1,6 +1,6 @@
 ---
 categories:
-  - Moving
+  - 2.Moving
 date: 2018-11-03T17:03:58.000Z
 title: Residential Moves
 description: >-

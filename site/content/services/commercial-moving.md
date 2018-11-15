@@ -1,6 +1,7 @@
 ---
 categories:
-  - Moving
+  - 2.Moving
+categories_weight: 2
 date: 2018-11-03T17:03:58.000Z
 title: Commercial Moves
 description: >-

@@ -1,6 +1,7 @@
 ---
 categories:
-  - Cleaning
+  - 3.Cleaning
+categories_weight: 1
 date: 2018-10-03T17:03:58.000Z
 title: Whole Home Cleaning
 description: >-
