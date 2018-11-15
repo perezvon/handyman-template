@@ -20,3 +20,11 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Categories", name: "categories", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "markdown"}
+  - name: "gallery" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Gallery" # Used in the UI, ie.: "New Post"
+    folder: "gallery" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Caption", name: "caption", widget: "string"}
