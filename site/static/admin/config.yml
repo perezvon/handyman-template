@@ -6,7 +6,7 @@ media_folder: "img/uploads" # Folder where user uploaded files should go
 collections: # A list of collections the CMS should be able to edit
   - name: "testimonials" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Testimonial" # Used in the UI, ie.: "New Post"
-    folder: "testimonials" # The path to the folder where the documents are stored
+    folder: "site/content/testimonials" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Author", name: "author", widget: "string", tagname: "h1"}
@@ -14,7 +14,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Stars", name: "stars", widget: "stars"}
   - name: "service" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Service" # Used in the UI, ie.: "New Post"
-    folder: "services" # The path to the folder where the documents are stored
+    folder: "site/content/services" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Categories", name: "categories", widget: "string"}
@@ -22,7 +22,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Description", name: "description", widget: "markdown"}
   - name: "gallery" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Gallery" # Used in the UI, ie.: "New Post"
-    folder: "gallery" # The path to the folder where the documents are stored
+    folder: "site/content/gallery" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
