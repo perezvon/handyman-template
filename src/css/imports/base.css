@@ -836,7 +836,7 @@ html {
   top: 0;
   left: 0;
   z-index: -1;
-  background: no-repeat center center url('/img/landing-img.jpg');
+  background: no-repeat center center url('/img/landing.jpg');
   background-color: #5B3D23;
   background-size: cover;
   h1 {
@@ -964,6 +964,14 @@ html {
   font-variant: small-caps;
   @media (min-width: 48em) {
     font-size: 32px !important;
+  }
+}
+
+.testimonial-submit {
+  margin: 0 auto;
+  font-variant: small-caps;
+  @media (min-width: 48em) {
+    font-size: 24px !important;
   }
 }
 
