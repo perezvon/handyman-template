@@ -11,7 +11,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Author", name: "author", widget: "string", tagname: "h1"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Stars", name: "stars", widget: "stars"}
+      - {label: "Stars", name: "stars", widget: "number", min: 1, max: 5}
   - name: "service" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Service" # Used in the UI, ie.: "New Post"
     folder: "site/content/services" # The path to the folder where the documents are stored
