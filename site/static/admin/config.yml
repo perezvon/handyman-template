@@ -10,7 +10,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Author", name: "author", widget: "string", tagname: "h1"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "text"}
       - {label: "Stars", name: "stars", widget: "number", min: 1, max: 5}
   - name: "service" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Service" # Used in the UI, ie.: "New Post"
@@ -19,7 +19,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Categories", name: "categories", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "markdown"}
+      - {label: "Description", name: "description", widget: "string"}
   - name: "gallery" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Gallery" # Used in the UI, ie.: "New Post"
     folder: "site/content/gallery" # The path to the folder where the documents are stored
