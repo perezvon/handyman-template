@@ -20,14 +20,63 @@ $('.mobile-nav-menu').on('click', (e, target) => {
   isOpen = !isOpen;
 });
 
+$('.bg-overlay').on('click', (e, target) => {
+  $('.bg-overlay').fadeOut().hide();
+  $('.lightbox-image').attr('src', null).fadeOut().hide();
+  console.log($('.lightbox-image').attr('src'))
+  fullscreenImage = !fullscreenImage;
+});
+
+$('.lightbox-image').on('click', (e, target) => {
+  $('.bg-overlay').fadeOut().hide();
+  $('.lightbox-image').attr('src', null).fadeOut().hide();
+  console.log($('.lightbox-image').attr('src'))
+  fullscreenImage = !fullscreenImage;
+});
+
 $('.gallery-image').on('click', (e, target) => {
   if (fullscreenImage) {
     $('.bg-overlay').fadeOut().hide();
-    $(e.target).css('z-index', '0').css('position', 'inherit').css('width', '300px');
+    $('.lightbox-image').attr('src', null).fadeOut().hide();
   } else {
-    console.log(window.scrollTop)
     $('.bg-overlay').fadeIn().show();
-    $(e.target).css('z-index', '1000').css('position', 'absolute').css('top',$(window).scrollTop()).css('left','9%').css('width', '80vw');
+    $('.lightbox-image').fadeIn().show().css('display', 'block').css('top',$(window).scrollTop() + 50).attr('src', e.target.src);
   }
   fullscreenImage = !fullscreenImage;
+});
+
+$('.gallery-container').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });

@@ -40,6 +40,7 @@
       <a href='/submit'><button class='testimonial-submit'>Submit a Testimonial</button>
     </div>
   {{ else if eq .Section "gallery" }}
+    <img class='lightbox-image'></img>
     <div class='bg-overlay'></div>
     <div class="gallery-container">
       {{ range where .Pages "Section" "gallery" }}

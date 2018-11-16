@@ -904,20 +904,49 @@ html {
 .gallery-container {
   display: flex;
   flex-flow: row wrap;
+  .slick-arrow {
+    padding: 0;
+    background: none;
+    color: transparent;
+    z-index: 5;
+    width: auto;
+    &:hover {
+      background: none;
+    }
+    &::before {
+      font-size: 40px;
+    }
+  }
+  .slick-prev {
+    left: 8px;
+  }
+  ul {
+    margin: 0 !important;
+    li {
+      position: relative !important;
+      display: inline-block !important;
+    }
+  }
+}
+
+.lightbox-image {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 9%;
+  width: 80vw;
+  z-index: 1000;
+  margin: 0 auto;
 }
 
 .gallery-image-container {
-  min-width: 288px;
-  min-height: 464px;
+  margin: 0 10px;
 }
 
 .gallery-image {
   margin: 20px 0;
   width: 300px;
   transition: all 0.3s;
-  @media (min-width: 48em) {
-      margin: 20px;
-  }
   &:hover {
     cursor: pointer;
   }
