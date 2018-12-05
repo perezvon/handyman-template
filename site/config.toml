@@ -4,7 +4,7 @@ title = "JJ Handyman Services"
 
 [params]
   description = "Handyman services, moving, and professional cleaning in the greater Twin Cities metro area."
-  about = "JJ Handyman Services is a full fledged company dedicated to our consumer needs. We offer three services Handyman/Remodeling, Moving, and Cleaning; had an idea that if we could repair or remodel your home before residing or after evacuating, we could also move you in or out, to make it even more convenient for clients can have your place professionally cleaned. We have done hundreds of residential properties as well as a wide list of commercial clients including: Ruby Tuesday, Home Goods, Northtown Mall, St. Louis Park Rec Center, Superbowl LII (The armory). We service all over the United States don't worry, book today for your free consultation."
+  about = "JJ Handyman Services is a full fledged company dedicated to our consumer needs. We offer three services Handyman/Remodeling, Moving, and Cleaning; had an idea that if we could repair or remodel your home before residing or after evacuating, we could also move you in or out, to make it even more convenient for clients can have your place professionally cleaned. We have done hundreds of residential properties as well as a wide list of commercial clients including: Ruby Tuesday, Home Goods, Northtown Mall, St. Louis Park Rec Center, Superbowl LII (The armory), Lifetime Fitness Headquarters. We service all over the United States don't worry, book today for your free consultation."
 [[menu.main]]
     name = "Services"
     url  = "/services"
