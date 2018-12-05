@@ -659,7 +659,7 @@ html {
   left: 0;
   background: rgba(0,0,0,0.9);
   color: white;
-  padding: 30px;
+  padding: 2px;
   font-variant: all-petite-caps;
   font-weight: bold;
 }
@@ -679,7 +679,7 @@ html {
   width: 100vw;
   height: 100vh;
   transition: all 0.3s;
-  padding: 30px 14px;
+  padding: 6px 10px;
   color: rgba(255, 255, 255, 0.5);
   background-color: rgba(0,0,0,0.9);
   .mobile-nav-menu {

@@ -1,6 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "JJ Handyman Services"
+logo = 'logo.png'
 
 [params]
   description = "Handyman services, moving, and professional cleaning in the greater Twin Cities metro area."
