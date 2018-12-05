@@ -5,6 +5,7 @@
   {{ if eq .Section "services" }}
     {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
       <section>
+        <div class='services-bg servicesbg-1'></div>
         {{ if eq "categories" $taxonomyname }}
           {{ range $key, $value := $taxonomy }}
             <h2>{{ $key }}</h2>
@@ -27,6 +28,8 @@
     {{ end }}
   {{ else if eq .Section "testimonials" }}
     <div class='testimonials-container'>
+      <div class='testimonials-bg testbg-1'></div>
+      <div class='testimonials-bg testbg-2'></div>
       {{ range where .Pages "Section" "testimonials" }}
         <div class='testimonial'>
           <p class='stars'>⭐⭐⭐⭐⭐</p> 

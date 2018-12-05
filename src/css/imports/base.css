@@ -988,6 +988,35 @@ html {
   font-variant: small-caps;
 }
 
+.services-bg {
+  background: no-repeat center center url('/img/services.jpg');
+  width: 400px;
+  height: 400px;
+  z-index: -1;
+  position: absolute;
+}
+.servicesbg-1 {
+  top: 33px;
+  right: 22%;
+}
+
+.testimonials-bg {
+  background: no-repeat center center url('/img/testimonial_bg.png');
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+}
+.testbg-1 {
+  top: 97px;
+  right: 50%;
+}
+.testbg-2 {
+  top: 397px;
+  right: 2%;
+}
+
 .testimonial-cta {
   margin: 0 auto;
   font-variant: small-caps;
