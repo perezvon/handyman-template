@@ -12,6 +12,7 @@ If you've been pleased with our work or just want to say hi, we want to hear fro
 <form name="testimonial-form" method="POST" netlify-honeypot="bot-field" netlify>
   <p class="hidden">
     <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+    <input type="text" name="subject" value="New Testimonial Submitted" />
   </p>
   <input type="text" placeholder="Your Name" name="name">
   <input type="email" placeholder="Your Email" name="email">
