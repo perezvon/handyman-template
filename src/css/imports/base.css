@@ -990,14 +990,19 @@ html {
 
 .services-bg {
   background: no-repeat center center url('/img/services.jpg');
-  width: 400px;
-  height: 400px;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+  top: 103px;
+  right: 0;
   z-index: -1;
   position: absolute;
-}
-.servicesbg-1 {
-  top: 33px;
-  right: 22%;
+  @media (min-width:48em) {
+    width: 400px;
+    height: 400px;
+      top: 33px;
+      right: 22%;
+  }
 }
 
 .testimonials-bg {
